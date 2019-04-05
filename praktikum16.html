@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 16 : menambah element dengan jquery</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>add function jquery</h1>
+        <div class="kotak">
+            <span>ISI KOTAK</span>
+        </div>
+        <button class="after">tes after</button>
+        <button class="before">tes before</button>
+        <button class="append">tes append</button>
+        <button class="prepend">tes prepend</button>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.after').click(function(){
+                $('.kotak').after("<h4>contoh after</h4>")
+            });
+
+            $('.before').click(function(){
+                $('.kotak').before("<h4>contoh before</h4>")
+            });
+
+            $('.append').click(function(){
+                $('.kotak').append("<h4>contoh append</h4>")
+            });
+            
+            $('.prepend').click(function(){
+                $('.kotak').prepend("<h4>contoh prepend</h4>")
+            });
+        });
+    </script>
+</html>

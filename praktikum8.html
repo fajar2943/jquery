@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 8 : chaining function</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+<body>
+    <h1>chaining function pada jquery</h1>
+    <button id="tombol">KLIK</button>
+    <div class="box"></div>
+    <div class="kotak_biru">function chaining dijalankan</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.box').fadeIn(800).slideup(900).slidedown(300);
+            });
+        });
+</script>
+</html>

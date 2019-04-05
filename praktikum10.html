@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 10 : get value html()</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>get function jquery | html()</h1>
+        <button id="tombol">KLIK</button>
+        <p class="kata">selamat belajar jquery</p>
+    </body>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol').click(function(){
+           var teks = $(".kata").html();
+           alert(teks);
+            });
+        });
+    </script>
+</html>

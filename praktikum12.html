@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 12 : get value attr()</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>get function jquery | attr()</h1>
+        <input type="text" name="nama" class="nama">
+    <button id="tombol">KLIK</button>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                var nama = $(".nama").attr('type');
+                alert(nama);
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 5 : effect slide</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+<body>
+    <h1>efect pada jquery | slide</h1>
+    <button id="tombol">tampilkan (slideDown)</button>
+    <button id="tombol2">sembunyikan(slideup)</button>
+    <button id="tombol3">effect slide toggle (slideToggle)</button>
+    <div class="box"></div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.box').slidedown();
+        });
+        
+        $('#tombol2').click(function(){
+            $('.box').slideup();
+        });
+
+        $('#tombol3').click(function(){
+            $('.box').slideToggle();
+        });
+    });
+</script>
+</html>

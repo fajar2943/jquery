@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 19 : menambahkan CSS dengan jquery</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+<body>
+        <h1>CSS function jquery</h1>
+        <button class="tombol1">tombol</button>
+        <div class="lingkaran"></div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tambah').click(function(){
+            $('.lingkaran').css("background","blue");
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prkatikum 3 : effect hide show</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylsheet" type="text/css" href="asset/css/style1.css">
+    </head>
+<body>
+    <h1>efect pada jquery | hide dan show</h1>
+    <button id="tombol1">tampilkan</button>
+    <button id="tombol2">sembunyikan</button>
+    <div class="box"></div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.box').show();
+        });
+        
+        $('#tombol2').click(function(){
+            $('.box').hide();
+        });
+    });
+</script>
+</html>

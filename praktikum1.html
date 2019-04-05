@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prkatikum 1 : belajar pengenalan jquery dasar</title>
+    <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+    <!--
+        online
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    -->
+    <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+</head>
+<body>
+    <h1>tutorial jquery</h1>
+    <button id="tombol">TOMBOL</button>
+    <div class="box"></div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol').click(function(){
+            $('.box').toggle();
+        });
+    });
+</script>
+</html>
